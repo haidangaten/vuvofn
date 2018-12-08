@@ -1,0 +1,27 @@
+.penci-tags-links {
+	display: inline-block;
+	margin: 10px -2.5px 5px;
+	width: 100%;
+
+	a{
+		float: left;
+		display: inline-block;
+		min-height: 24px;
+		line-height: 24px;
+		@include font-size( 1 );
+		font-weight: 700;
+		text-align: left;
+		color: $color__meta;
+		background: #ececec;
+		transition: all 0.3s;
+		margin: 0 2.5px 5px;
+		text-transform: uppercase;
+		padding-left: 10px;
+		padding-right: 10px;
+
+		&:hover {
+			color:$color__white;
+			background-color : $color__text-input;
+		}
+	}
+}

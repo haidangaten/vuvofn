@@ -1,0 +1,62 @@
+.penci-about-wrap {
+	max-width: 1200px;
+}
+
+.penci-wraper-import .demos-container {
+	overflow: hidden;
+	text-align: center;
+}
+
+.penci-wraper-import .demo-selector {
+	display: inline-block;
+	width: 20%;
+	border: 1px solid #dedede;
+	margin: 0 3% 3% 0;
+	position: relative;
+}
+
+.penci-wraper-import .demo-image {
+	position: relative;
+}
+
+.penci-wraper-import .demo-image img {
+	width: 100%;
+	display: block;
+}
+
+.penci-wraper-import .demo-selector-tools {
+	position: relative;
+	border-top: 1px solid #dedede;
+	background-color: rgba(255,255,255,.65)
+}
+
+.penci-wraper-import .demo-install-actions {
+	position: relative;
+	z-index: 2;
+}
+
+.penci-wraper-import .demo-selector-tools .button {
+	float: right;
+}
+
+.penci-wraper-import .demo-selector-tools .button {
+	margin: 10px 15px 10px 0;
+}
+
+.penci-wraper-import .demo-title {
+	font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+	margin: 0;
+	padding: 15px;
+}
+
+#penci-soledad-demo-import-progress .spinner {
+	float: left;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.penci-wraper-import .penci-soledad-demo-log {
+	display: none;
+}

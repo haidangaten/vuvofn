@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"css:style": "node-sass assets/css/style.scss > assets/css/style.css",
+		"css:admin": "node-sass assets/css/admin.scss > assets/css/admin.css",
+		"css:autoprefix:style": "postcss --use autoprefixer assets/css/style.css -o assets/css/style.css --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
+		"css:autoprefix:admin": "postcss --use autoprefixer assets/css/admin.css -o assets/css/admin.css --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
+		"css:render:style": "npm run css:style && npm run css:autoprefix:style",
+		"css:render:admin": "npm run css:admin && npm run css:autoprefix:admin",
+		"css": "npm run css:render:style && npm run css:render:admin",
+		"js": "uglifyjs shortcodes/block_4/script.js > assets/js/script.js",
+		"watch": "onchange **/*.scss -- npm run css:style",
+		"watch:js": "onchange params/**/*.js shortcodes/**/*.js -- npm run js",
+		"start": "npm run css:render:style && npm run css:render:admin && npm run js"
+	}
+}

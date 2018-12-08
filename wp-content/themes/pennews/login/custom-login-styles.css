@@ -1,0 +1,18 @@
+body.login {
+    background-image: url('../images/login/home.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+  
+  .login input[type="text"]{
+   
+    -webkit-border-radius: 4px;
+  }
+  
+  .login input[type="password"]{
+    
+    -webkit-border-radius: 4px;
+  }
+ 
